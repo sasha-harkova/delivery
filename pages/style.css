@@ -12,6 +12,10 @@
   color: #3b3b3b;
   margin: 0;
 }
+.delivery button {
+  appearance: none;
+  -webkit-appearance: none;
+}
 .delivery input[type=number]::-webkit-outer-spin-button,
 .delivery input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -138,8 +142,14 @@
 
 @media screen and (max-width: 600px) {
   .pickup__map {
-    width: 100%;
-    height: 220px;
+    width: 400px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pickup__map {
+    width: 280px;
+    height: 140px;
   }
 }
 .courier {
@@ -354,6 +364,15 @@
 }
 .submit-button_disactive:hover {
   transform: none;
+}
+
+@media screen and (max-width: 480px) {
+  .submit-button {
+    width: 130px;
+  }
+  .submit-button:hover {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
