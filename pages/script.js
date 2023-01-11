@@ -33,18 +33,18 @@ const allMethods = [
 
 function checkMethodState(method, methodName) {
   if (method.classList.contains("method_active")) {
-    method.style.backgroundImage = "url(/images/background.jpg)";
+    method.style.backgroundImage = "url(images/background.jpg)";
     method.querySelector(".method__title").style.color = "#ffffff";
     method.querySelector(
       `.method__image_type_${methodName}`
-    ).style.backgroundImage = `url(/images/${methodName}_type_white.png)`;
+    ).style.backgroundImage = `url(images/${methodName}_type_white.png)`;
     document.querySelector(`.${methodName}`).style.display = "block";
   } else {
     method.style.backgroundImage = "";
     method.querySelector(".method__title").style.color = "#3b3b3b";
     method.querySelector(
       `.method__image_type_${methodName}`
-    ).style.backgroundImage = `url(/images/${methodName}.png)`;
+    ).style.backgroundImage = `url(images/${methodName}.png)`;
     document.querySelector(`.${methodName}`).style.display = "none";
   }
 }
