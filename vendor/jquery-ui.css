@@ -3,6 +3,11 @@
   position: relative;
 }
 /* Ползунок */
+.ui-slider-handle {
+  /* -ms-touch-action: none;
+  touch-action: none; */
+}
+
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
@@ -22,7 +27,7 @@
 }
 /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-  height: 3px; 
+  height: 3px;
 }
 /* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
