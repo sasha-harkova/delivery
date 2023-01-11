@@ -11,12 +11,12 @@ ___
 * выбрать способ доставки.
 
 ### Технологический стэк:
-* ##### HTML5
-* ##### CSS3
-* ##### БЭМ
-* ##### ES6
-* ##### Leaflet
-* ##### JQuery
+* __HTML5__
+* __CSS3__
+* __БЭМ__
+* __ES6__
+* __Leaflet__
+* __JQuery__
 
 ___
 ![](https://github.com/sasha-harkova/delivery/blob/main/112.gif)
