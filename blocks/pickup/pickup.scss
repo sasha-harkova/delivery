@@ -10,10 +10,20 @@
 
 @media screen and (max-width: $medium) {
   .pickup {
-  
+
     &__map {
-      width: 100%;
-      height: 220px;
+      width: 620px;
+      height: 310px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .pickup {
+
+    &__map {
+      width: 440px;
+      height: 210px;
     }
   }
 }
