@@ -18,10 +18,20 @@
 
   &_disactive {
     background-color: #edf1fc;
-    cursor: default;    
+    cursor: default;
 
     &:hover {
       transform: none;
-    }    
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .submit-button {
+    width: 130px;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
