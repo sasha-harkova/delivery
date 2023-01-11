@@ -1,0 +1,24 @@
+.list-item {
+  @include titles(10px, 400);
+  padding: 7px 11px 7px 11px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  background-color: #edf1fc;
+  list-style-type: none;
+  cursor: pointer;
+
+  &:first-of-type {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  &_active {
+    background-color: #6b90ff;
+    color: white;
+  }
+}

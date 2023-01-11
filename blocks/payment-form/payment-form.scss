@@ -1,0 +1,66 @@
+.payment-form {
+  
+  &__inputs-container {
+    display: flex;
+    position: relative;
+    margin: $margin-bottom-for-block;
+    
+    &_unvalid {
+      margin: 0 0 2px;
+    }
+  }
+
+  &__input {
+
+    &_type_card {
+      width: 100px;
+      margin: 0 15px 0 0;
+      text-align: center;
+    }
+
+    &_type_code-of-tel {
+      width: 90px;
+      height: 42px;
+      margin: 0 15px 0 0;
+    }
+
+    &_type_tel {
+      width: 375px;
+    }
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .payment-form {
+    &__input {
+
+      &_type_card {
+        width: 70px;
+      }
+    
+      &_type_tel {
+        width: 255px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .payment-form {
+    &__input {
+
+      &_type_card {
+        width: 55px;
+        margin: 0 5px 0 0;
+      }
+    
+      &_type_code-of-tel {
+        margin: 0 5px 0 0;
+      }
+    
+      &_type_tel {
+        width: 175px;
+      }
+    }
+  }
+}

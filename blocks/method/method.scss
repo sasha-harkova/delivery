@@ -1,0 +1,82 @@
+.method {
+  width: 260px;
+  height: 130px;
+  padding-top: 20px;
+  margin-right: 20px;
+  border: 1px solid #6b90ff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &__title {
+    @include titles(20px, 600);
+    margin: 0;
+    text-align: center;
+  }
+
+  &__image {
+    width: 70px;
+    height: 80px;
+    background-size: 70px 80px;
+    margin: 15px auto 0;
+
+    &_type_pickup {
+      background: url(../images/pickup.png) no-repeat center;
+    }
+
+    &_type_courier {
+      background: url(../images/courier.png) no-repeat center;
+    }
+  }
+
+  &:hover {
+    border: 1px solid #0036d8;
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .method {
+    width: 210px;
+    height: 105px;
+    padding-top: 10px;
+    margin-right: 20px;
+  
+    &__title {
+      @include titles(16px, 600);
+    }
+  
+    &__image {
+      width: 60px;
+      height: 57px;
+      background-size: 60px 57px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .method {
+    width: 130px;
+    height: 120px;
+    padding-top: 10px;
+    margin-right: 10px;
+  
+    &__title {
+      @include titles(12px, 600);
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    &__image {
+      width: 55px;
+      height: 53px;
+      background-size: 55px 53px;
+
+      &_type_pickup {
+        margin-top: 30px;
+      }
+    }
+  }
+}

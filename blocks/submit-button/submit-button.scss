@@ -1,0 +1,27 @@
+.submit-button {
+  width: 130px;
+  height: 25px;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #6b90ff;
+  @include titles(15px, 600);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s linear;
+    }
+
+  &_disactive {
+    background-color: #edf1fc;
+    cursor: default;    
+
+    &:hover {
+      transform: none;
+    }    
+  }
+}

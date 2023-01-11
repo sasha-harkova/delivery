@@ -1,0 +1,19 @@
+.pickup {
+  display: none;
+
+  &__map {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .pickup {
+  
+    &__map {
+      width: 100%;
+      height: 220px;
+    }
+  }
+}

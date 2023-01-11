@@ -1,0 +1,16 @@
+.title-of-method {
+  @include titles(26px, 600);
+  margin: $margin-bottom-for-block;
+}
+
+@media screen and (max-width: $medium) {
+  .title-of-method {
+    @include titles(24px, 600);
+  }
+}
+
+@media screen and (max-width: $small) {
+  .title-of-method {
+    @include titles(20px, 600);
+  }
+}

@@ -1,0 +1,35 @@
+.input {
+  @include titles(15px, 400);
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 30px;
+  width: 480px;
+  border: 1px solid #6b90ff;
+  border-radius: 5px;
+
+  &_valid {
+    margin: $margin-bottom-for-block;
+    border: 1px solid #6bff97;
+  }
+  
+  &_unvalid {
+    margin: 0 0 2px;
+    border: 1px dashed #ff6b6b;
+  }
+
+  &::placeholder {
+    color: #c7cbd4;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .input {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .input {
+    width: 270px;
+  }
+}

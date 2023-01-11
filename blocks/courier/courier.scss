@@ -1,0 +1,32 @@
+.courier {
+  display: none;
+
+  &__time {
+    margin: $margin-bottom-for-block;
+    border: none;
+    @include titles(15px, 400);
+  }
+
+  &__time-slider {
+    width: 480px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .courier {
+
+    &__time-slider {
+      width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .courier {
+
+    &__time-slider {
+      width: 280px;
+    }
+  }
+}

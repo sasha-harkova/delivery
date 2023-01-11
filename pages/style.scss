@@ -1,0 +1,21 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../vendor/jquery-ui.css);
+@import url(../vendor/leaflet/leaflet.css);
+
+@import "./mixins/mixins.scss";
+@import '../blocks/delivery/delivery.scss';
+@import "../blocks/methods/methods.scss";
+@import "../blocks/method/method.scss";
+@import "../blocks/pickup/pickup.scss";
+@import "../blocks/courier/courier.scss";
+@import "../blocks/title-of-method/title-of-method.scss";
+@import "../blocks/subtitle-of-method/subtitle-of-method.scss";
+@import "../blocks/list/list.scss";
+@import "../blocks/list-item/list-item.scss";
+@import "../blocks/form/form.scss";
+@import "../blocks/inputs/inputs.scss";
+@import "../blocks/input/input.scss";
+@import "../blocks/input-error/input-error.scss";
+@import "../blocks/payment-form/payment-form.scss";
+@import "../blocks/submit-button/submit-button.scss";

@@ -1,0 +1,12 @@
+@mixin titles($size, $weight) {
+  font: {
+    family: "Inter", "Arial", sans-serif;
+    size: $size;
+    weight: $weight;
+  }
+  color: #3b3b3b;
+}
+
+$margin-bottom-for-block: 0 0 20px;
+$medium: 600px;
+$small: 480px;

@@ -1,0 +1,8 @@
+.input-error {
+  
+  &_visible {
+    @include titles(10px, 400);
+    color: #ff6b6b;
+    margin-bottom: 8px;
+  }
+}
